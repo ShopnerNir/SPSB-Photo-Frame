@@ -1,36 +1,124 @@
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 15px;
+  margin:0;
+  padding:0;
+  background:#f9f9f9;
+  color:#222;
+  text-align:center;
+}
+
+.header {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  background:#e3f2fd;
+  flex-wrap:wrap;
+}
+
+.header-left .logo {
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  margin-right:20px;
+}
+
+.header-right h1 {
+  margin:0;
+  font-size:24px;
+}
+
+.header-right .subtitle {
+  margin:5px 0 0 0;
+  font-size:16px;
+  color:#555;
+}
+
+.instruction-box {
+  background:#fff;
+  margin:20px auto;
+  padding:20px;
+  border-radius:10px;
+  max-width:700px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.instruction-box h2 {
+  margin-top:0;
+}
+
+.editor-section {
+  margin:20px auto;
+  max-width:700px;
 }
 
 .canvas-wrap {
-  max-width: 100%;
-  margin: 15px auto;
+  margin:15px auto;
 }
 
 canvas {
-  border: 2px solid #222;
-  max-width: 100%;
+  border:2px solid #222;
+  max-width:100%;
   touch-action: none;
 }
 
 .controls {
-  margin-top: 10px;
+  margin-top:10px;
 }
 
 .controls label {
-  display: block;
-  margin-top: 8px;
-  font-size: 14px;
+  display:block;
+  margin-top:8px;
+  font-size:14px;
 }
 
 input[type=range] {
-  width: 90%;
+  width:90%;
 }
 
 button {
-  margin: 8px 4px;
-  padding: 8px 14px;
-  font-size: 14px;
+  margin:8px 4px;
+  padding:8px 14px;
+  font-size:14px;
+}
+
+.footer {
+  margin-top:30px;
+  padding:15px;
+  background:#e3f2fd;
+}
+
+.footer p {
+  margin:5px 0;
+}
+
+.footer-profile {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-top:5px;
+}
+
+.profile-pic {
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  margin-right:10px;
+}
+
+.footer-text {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  font-size:12px;
+}
+
+.footer-text a {
+  color:#007bff;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.footer-text span {
+  color:#555;
 }
