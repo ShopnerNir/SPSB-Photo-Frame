@@ -7,18 +7,30 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>Photo Frame Generator</h2>
 
-  <input type="file" id="upload" accept="image/*"><br><br>
+<h2>Photo Frame Generator</h2>
 
-  <label for="frameSelect">Select Frame:</label>
-  <select id="frameSelect">
-    <option value="Frames/Frame 1.png">Frame 1</option>
-  </select><br><br>
+<input type="file" id="upload" accept="image/*"><br><br>
 
-  <canvas id="canvas" width="500" height="500"></canvas><br><br>
-  <button id="download">Download Image</button>
+<select id="frameSelect">
+  <option value="Frames/Frame 1.png">Frame 1</option>
+</select>
 
-  <script src="script.js"></script>
+<div class="canvas-wrap">
+  <canvas id="canvas" width="500" height="500"></canvas>
+</div>
+
+<div class="controls">
+  <label>Zoom</label>
+  <input type="range" id="zoomSlider" min="0.2" max="3" step="0.01" value="1">
+
+  <label>Rotate</label>
+  <input type="range" id="rotateSlider" min="-180" max="180" value="0">
+
+  <button id="reset">Reset</button>
+  <button id="download">Download</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
