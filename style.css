@@ -46,13 +46,27 @@ body {
   box-shadow: 0 6px 15px rgba(0,0,0,0.08);
   font-size: 0.95rem;
   line-height: 1.4;
-  text-align: left;
 }
 
 .instruction-box h2 {
   margin-top: 0;
   font-size: 1.2rem;
+  text-align: center; 
 }
+.instruction-box h2::after {
+      content: "";
+      display: block;
+      width: 50%;       /* অর্ধেক স্ক্রিনের লাইন */
+      height: 2px;      /* লাইন পুরুত্ব */
+      background-color: #000; /* লাইন কালার */
+      margin: 10px auto 0 auto; /* মাঝখানে রাখার জন্য */
+    }
+
+    /* প্যারাগ্রাফ বামদিকে */
+    .instruction-box p {
+      text-align: left;   /* বাকি লেখাগুলো বামদিকে */
+      margin: 10px 0;
+    }
 
 /* ===== Editor Section ===== */
 .editor-section {
