@@ -42,7 +42,7 @@ body {
   margin: 15px auto;
   padding: 15px;
   border-radius: 12px;
-  max-width: 95%;
+  max-width: 90%;
   box-shadow: 0 6px 15px rgba(0,0,0,0.08);
   font-size: 0.95rem;
   line-height: 1.4;
@@ -71,7 +71,7 @@ body {
 /* ===== Editor Section ===== */
 .editor-section {
   margin: 15px auto;
-  max-width: 95%;
+  max-width: 90%;
 }
 
 .canvas-wrap {
