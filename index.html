@@ -1,35 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Photo Frame Generator</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Frame Editor</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>Photo Frame Generator</h2>
+<!-- HEADER -->
+<header class="header">
+  <div class="header-left">
+    <img src="logo.png" alt="Logo" class="logo">
+  </div>
+  <div class="header-right">
+    <h1>বাংলাদেশ বিজ্ঞান জনপ্রিয়করণ সমিতি</h1>
+    <p class="subtitle">SPSB-এর ২৪ তম প্রতিষ্ঠাবার্ষিকী</p>
+  </div>
+</header>
 
-<input type="file" id="upload" accept="image/*"><br><br>
+<!-- INSTRUCTION BOX -->
+<section class="instruction-box">
+  <h2>কিভাবে ছবি আপলোড এবং এডিট করবেন</h2>
+  <p>আপনি নিচের <strong>Upload / Choose File</strong> বাটন ব্যবহার করে আপনার ছবি নির্বাচন করুন।  
+  তারপর ছবিটিকে টেনে সরান, জুম ইন / আউট করুন, এবং রোটেট করতে পারবেন। সব ঠিক হলে <strong>Download</strong> বাটনে ক্লিক করুন।</p>
+  <input type="file" id="upload" accept="image/*">
+</section>
 
-<select id="frameSelect">
-  <option value="Frames/Frame 1.png">Frame 1</option>
-</select>
+<!-- FRAME EDITOR -->
+<section class="editor-section">
+  <select id="frameSelect">
+    <option value="Frames/Frame 1.png">Frame 1</option>
+    <option value="frames/frame2.png">Frame 2</option>
+  </select>
+  <div class="canvas-wrap">
+    <canvas id="canvas" width="500" height="500"></canvas>
+  </div>
+  <div class="controls">
+    <label>Zoom</label>
+    <input type="range" id="zoomSlider" min="0.05" max="5" step="0.01" value="1">
+    <label>Rotate</label>
+    <input type="range" id="rotateSlider" min="-180" max="180" value="0">
+    <button id="reset">Reset</button>
+    <button id="download">Download</button>
+  </div>
+</section>
 
-<div class="canvas-wrap">
-  <canvas id="canvas" width="500" height="500"></canvas>
-</div>
-
-<div class="controls">
-  <label>Zoom</label>
-  <input type="range" id="zoomSlider" min="0.2" max="3" step="0.01" value="1">
-
-  <label>Rotate</label>
-  <input type="range" id="rotateSlider" min="-180" max="180" value="0">
-
-  <button id="reset">Reset</button>
-  <button id="download">Download</button>
-</div>
+<!-- FOOTER -->
+<footer class="footer">
+  <p>Developed by</p>
+  <div class="footer-profile">
+    <img src="utsab.jpg" alt="Profile" class="profile-pic">
+    <div class="footer-text">
+      <a href="https://www.facebook.com/share/1G17Cra2ME/" target="_blank">উৎসব সরকার</a>
+      <span>ঢাকা বাংলাদেশ</span>
+    </div>
+  </div>
+</footer>
 
 <script src="script.js"></script>
 </body>
