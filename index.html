@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Frame Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Photo Frame Generator</h2>
+
+  <input type="file" id="upload" accept="image/*"><br><br>
+
+  <label for="frameSelect">Select Frame:</label>
+  <select id="frameSelect">
+    <option value="frames/frame1.png">Frame 1</option>
+    <option value="frames/frame2.png">Frame 2</option>
+  </select><br><br>
+
+  <canvas id="canvas" width="500" height="500"></canvas><br><br>
+  <button id="download">Download Image</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
