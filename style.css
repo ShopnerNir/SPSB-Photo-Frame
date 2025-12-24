@@ -70,8 +70,8 @@ body {
 
 /* ===== Editor Section ===== */
 .editor-section {
-  margin: 15px auto;
-  max-width: 90%;
+  margin: 5px auto;
+  max-width: 85%;
 }
 
 .canvas-wrap {
