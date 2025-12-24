@@ -6,8 +6,8 @@ const uploadInput = document.getElementById("upload");
 const frameSelect = document.getElementById("frameSelect");
 const zoomSlider = document.getElementById("zoomSlider");
 const rotateSlider = document.getElementById("rotateSlider");
-const resetBtn = document.getElementById("reset");
-const downloadBtn = document.getElementById("download");
+const resetBtn = document.getElementById("resetBtn");
+const downloadBtn = document.getElementById("downloadBtn");
 
 // ==== IMAGES ====
 let userImage = new Image();
